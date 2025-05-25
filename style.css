@@ -1,0 +1,131 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: cinzel-decorative-bold;
+  line-height: 1.6;
+  color: #ffffff;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.cinzel-decorative-regular {
+  font-family: "Cinzel Decorative", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.cinzel-decorative-bold {
+  font-family: "Cinzel Decorative", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.cinzel-decorative-black {
+  font-family: "Cinzel Decorative", serif;
+  font-weight: 900;
+  font-style: normal;
+}
+.hero {
+ 
+  height: 100vh;
+  background-color: #e1e6ff; 
+  background-image: url('totoro1.jpg'); 
+  background-repeat: no-repeat;
+  background-size: 1290px;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+  position: relative;
+  z-index: 1;
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(176, 172, 255, 0.365); 
+  z-index: -1;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.highlight {
+  color: #ffffff;
+  font-family:cinzel-decorative-bold ;
+  font-weight: bold;
+  -webkit-text-stroke: 1px #000000; 
+  text-shadow:2px 2px 4px rgba(8, 5, 21, 0.735);
+}
+
+.scroll-button {
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background: #ff64a7; 
+  border-radius: 25px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.scroll-button:hover {
+  background: #e389ff; 
+
+}
+.section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.pastel-blue {
+  background-color: #d0f4f4;
+}
+
+.pastel-pink {
+  background-color: #ffd3e0;
+}
+
+.pastel-green {
+  background-color: #d5f4e6;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #ffdbf1;
+  font-size: 0.9rem;
+}
+.logo-text {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 40px;
+  color: black;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
