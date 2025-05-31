@@ -37,7 +37,7 @@ a {
   background-color: #e1e6ff; 
   background-image: url('totoro1.jpg'); 
   background-repeat: no-repeat;
-  background-size: 1290px;
+  background-size: cover;
   background-position: center;
   background-attachment: fixed;
   display: flex;
