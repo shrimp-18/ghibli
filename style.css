@@ -13,6 +13,7 @@
 }
 
 body {
+  cursor:url('flowerr.png'),auto;
   font-family: cinzel-decorative-bold;
   line-height: 1.6;
   color: #ffffff;
@@ -167,3 +168,39 @@ a {
   color: #000000;
   margin: 0;
 }
+.navbar {
+  background-color: #2c2c2c;
+  padding: 10px 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.navbar li {
+  display: inline;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-family: "Cinzel Decorative", serif;
+  font-size: 1.1rem;
+  transition: color 0.3s;
+}
+
+.navbar a:hover {
+  color: #a9c9ff;
+}
+
