@@ -1,0 +1,65 @@
+<html>
+    <header>
+        <title>About-Studio Ghibli</title>
+        <link rel="icon" href='favicon-32x32.png' type="image/png" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap" rel="stylesheet">
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Studio Ghibli</title>
+        <link rel="stylesheet" href="style1.css"/>
+    </header>
+     <body>
+        
+        <header class="hero">
+            <div class="content">
+                <h1><span class="logo-text"><span class="highlight"> STUDIO GHIBLI </span></span></h1>
+            </div>
+            <nav class="navbar">
+            <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="movies.html">Movies</a></li>
+            <li><a href="contact.html">Contact</a></li>
+           </ul>
+            </nav>
+             <main>
+    <section id="movies">
+      <div class="movie-card">
+        <h2>Spirited Away</h2>
+        
+       <video id="myVideo" width="900" height="300" controls>
+  <source src="https://dn721907.ca.archive.org/0/items/ghibil2/Spirited%20Away%20%282001%29%20%5BBluRay%5D%20%5B720p%5D%20%5BYTS.AM%5D/Spirited.Away.2001.720p.BluRay.x264-%5BYTS.AM%5D.mp4" type="video/mp4">
+</video>
+
+<button id="pipBtn">📺 Pop-out</button>
+
+<script>
+const video = document.getElementById('myVideo');
+const pipBtn = document.getElementById('pipBtn');
+
+pipBtn.addEventListener('click', async () => {
+  if (document.pictureInPictureElement) {
+    await document.exitPictureInPicture();
+  } else {
+    await video.requestPictureInPicture();
+  }
+});
+</script>
+
+
+        
+
+       
+      </div>
+
+      
+    </section>
+  </main>
+           
+              <footer class="footer">
+              <p>© 2025 Neha Lalit Kumar Arya. All rights reserved.</p>
+             </footer>
+    </body>
+</html>
