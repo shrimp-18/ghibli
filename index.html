@@ -40,5 +40,31 @@
               <footer class="footer">
               <p>© 2025 Neha Lalit Kumar Arya. All rights reserved.</p>
              </footer>
+             <div id="sprinkles-container"></div>
+<script>
+  function createSprinkle() {
+    const sprinkle = document.createElement('div');
+    sprinkle.classList.add('sprinkle');
+    
+    const colors = ['#B0FF60', '#FF87CB', '#6DCAFF', '#FFF13B', '#C931FF', '#FF7853'];
+    sprinkle.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+    
+    sprinkle.style.left = Math.random() * 100 + "vw";
+    sprinkle.style.animationDuration = (2 + Math.random() * 3) + "s";
+    
+    document.getElementById('sprinkles-container').appendChild(sprinkle);
+    
+    setTimeout(() => {
+      sprinkle.remove();
+    }, 5000);
+  }
+
+  window.addEventListener('load', () => {
+    for (let i = 0; i < 100; i++) {
+      setTimeout(createSprinkle, i * 100);
+    }
+  });
+</script>
+
     </body>
 </html> 
